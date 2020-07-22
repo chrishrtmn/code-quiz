@@ -109,9 +109,9 @@ export default function Grid() {
                 </a>
               </li>
               <li>Snowboard in winters</li>
-              <li>Kayaking</li>
-              <li>Watching Movies</li>
-              <li>Listening to Music</li>
+              <li>Kayak</li>
+              <li>Watch Movies</li>
+              <li>Listen to Music</li>
               <li>Visual Design</li>
             </ul>
           </div>

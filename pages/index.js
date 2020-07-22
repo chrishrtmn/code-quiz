@@ -66,7 +66,7 @@ export default function Home() {
         }
 
         i {
-          display: none;
+          display: inline-block;
           width: 0;
           height: 0;
           margin: 0 20px 0 14px;
@@ -76,8 +76,12 @@ export default function Home() {
           top: -6px;
         }
 
+        h1 i {
+          display: none;
+        }
+
         @media (min-width: 640px) {
-          i {
+          h1 i {
             display: inline-block;
             margin: 0 30px 0 24px;
           }
