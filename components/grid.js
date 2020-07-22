@@ -310,13 +310,6 @@ export default function Grid() {
           background: rgba(100, 120, 133, 0.92);
         }
 
-        @media hover {
-          .grid-item .overlay {
-            opacity: 1;
-            background: rgba(100, 120, 133, 0.92);
-          }
-        }
-
         .grid-item .content h2 {
           margin: 0 0 10px;
         }
