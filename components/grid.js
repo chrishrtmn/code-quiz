@@ -91,9 +91,28 @@ export default function Grid() {
 
         <div className='overlay'>
           <div className='content'>
-            <h2>Other</h2>
+            <h2>Interests</h2>
             <ul>
-              <li></li>
+              <li>
+                Learning more{' '}
+                <a
+                  href='https://comicvine1.cbsistatic.com/uploads/original/11125/111256935/5157145-large.gif'
+                  target='_blank'
+                >
+                  code
+                </a>
+              </li>
+              <li>
+                Ride my{' '}
+                <a href='https://onewheel.com' target='_blank'>
+                  Onewheel
+                </a>
+              </li>
+              <li>Snowboard in winters</li>
+              <li>Kayaking</li>
+              <li>Watching Movies</li>
+              <li>Listening to Music</li>
+              <li>Visual Design</li>
             </ul>
           </div>
         </div>
@@ -112,11 +131,11 @@ export default function Grid() {
             <h3>Tuna</h3>
             <h4>Young Buck</h4>
             <p>
-              <strong>Q</strong> For what would you be famous?
+              <span>Q:</span> For what would you be famous?
             </p>
             <p>
-              <strong>A</strong> My legendary puppy dog face and 1st rate
-              begging skills.
+              <span>A:</span> My legendary puppy dog face and 1st rate begging
+              skills.
             </p>
           </div>
         </div>
@@ -143,7 +162,9 @@ export default function Grid() {
         </ProgressiveImage>
 
         <div className='overlay'>
-          <div className='content'>Example text overlay</div>
+          <div className='content'>
+            <p>Text overlay</p>
+          </div>
         </div>
       </div>
 
@@ -156,7 +177,9 @@ export default function Grid() {
         </ProgressiveImage>
 
         <div className='overlay'>
-          <div className='content'>Example text overlay</div>
+          <div className='content'>
+            <p>Text overlay</p>
+          </div>
         </div>
       </div>
 
@@ -169,7 +192,17 @@ export default function Grid() {
         </ProgressiveImage>
 
         <div className='overlay'>
-          <div className='content'>Example text overlay</div>
+          <div className='content'>
+            <h2>Congrats!</h2>
+            <p>
+              <a
+                href='https://fsmedia.imgix.net/0b/48/3d/e0/7994/4301/ac18/8616981ab178/spider-man-homecoming-2017.gif?rect=141%2C0%2C860%2C430&auto=format%2Ccompress&w=650&gifq=35'
+                target='_blank'
+              >
+                You've found the secret!
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -277,11 +310,57 @@ export default function Grid() {
         }
 
         .grid-item .content h2 {
-          margin: 0 0 20px;
+          margin: 0 0 10px;
         }
 
-        .grid-item .content li {
-          padding: 3px 0;
+        @media (min-width: 640px) {
+          .grid-item .content h2 {
+            margin: 0 0 20px;
+          }
+
+          .grid-item .content li {
+            padding: 3px 0;
+          }
+        }
+
+        .grid-item .content a {
+          color: #fff;
+          text-decoration: none;
+          border-bottom: 2px solid #fff;
+          transition: all ease-in-out 0.2s;
+        }
+
+        .grid-item .content a:hover {
+          color: var(--color-brand-primary-dark);
+          border-color: var(--color-brand-primary-dark);
+        }
+
+        .grid-item .overlay.qa .content {
+          max-width: 240px;
+        }
+
+        .grid-item .overlay.qa h3 {
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-size: 14px;
+        }
+
+        .grid-item .overlay.qa h4 {
+          margin: 5px 0 0;
+          font-weight: lighter;
+          letter-spacing: 3px;
+          font-size: 14px;
+          color: var(--color-brand-primary-dark);
+        }
+
+        .grid-item .overlay.qa p {
+          margin: 15px 0;
+          font-size: 14px;
+        }
+
+        .grid-item .overlay.qa p span {
+          font-weight: bold;
+          color: var(--color-brand-primary-dark);
         }
 
         .grid-item .quote,

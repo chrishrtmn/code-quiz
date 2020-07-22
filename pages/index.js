@@ -39,6 +39,7 @@ export default function Home() {
           font-size: 18px;
           text-transform: uppercase;
           letter-spacing: 5px;
+          line-height: 1.2;
           color: var(--color-base);
           border-bottom: 1px solid var(--color-base-light);
         }
