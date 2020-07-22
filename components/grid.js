@@ -25,21 +25,21 @@ export default function Grid() {
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-04.jpg' alt='Image 04' />
+        <img src='/images/gallery/image-03.jpg' alt='Image 03' />
         <div className='overlay'>
           <div className='content'>Interest/Hobby</div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-05.jpg' alt='Image 05' />
+        <img src='/images/gallery/image-04.jpg' alt='Image 04' />
         <div className='overlay'>
           <div className='content'>4 Cats. Make it stop.</div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-06.jpg' alt='Image 06' />
+        <img src='/images/gallery/image-05.jpg' alt='Image 05' />
         <div className='overlay'>
           <div className='content'>
             <h3>Tuna</h3>
@@ -64,21 +64,21 @@ export default function Grid() {
       </div>
 
       <div className='grid-item'>
+        <img src='/images/gallery/image-06.jpg' alt='Image 06' />
+        <div className='overlay'>
+          <div className='content'>Example text overlay</div>
+        </div>
+      </div>
+
+      <div className='grid-item'>
+        <img src='/images/gallery/image-07.jpg' alt='Image 07' />
+        <div className='overlay'>
+          <div className='content'>Example text overlay</div>
+        </div>
+      </div>
+
+      <div className='grid-item'>
         <img src='/images/gallery/image-08.jpg' alt='Image 08' />
-        <div className='overlay'>
-          <div className='content'>Example text overlay</div>
-        </div>
-      </div>
-
-      <div className='grid-item'>
-        <img src='/images/gallery/image-09.jpg' alt='Image 09' />
-        <div className='overlay'>
-          <div className='content'>Example text overlay</div>
-        </div>
-      </div>
-
-      <div className='grid-item'>
-        <img src='/images/gallery/image-10.jpg' alt='Image 10' />
         <div className='overlay'>
           <div className='content'>Example text overlay</div>
         </div>
@@ -119,6 +119,11 @@ export default function Grid() {
           position: relative;
           width: 100%;
           height: 100%;
+          text-align: center;
+        }
+
+        .grid-item img {
+          width: 100%;
         }
 
         .grid-item > div {

@@ -29,6 +29,7 @@ export default function Home() {
         main {
           max-width: var(--width-max);
           margin: 0 auto;
+          padding: 0 20px;
           overflow: hidden;
         }
 
