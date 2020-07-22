@@ -1,0 +1,101 @@
+:root {
+  --color-base: #3b403f;
+  --color-base-light: #cdcece;
+  --width-max: 1150px;
+
+  --font-family-base: Arial, Helvetica, sans-serif;
+  --font-family-primary: 'Roboto', sans-serif;
+
+  --breakpoint-small: 700px;
+  --breakpoint-medium: 900px;
+  --breakpoint-large: 1100px;
+}
+
+/* Custom Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+img:not([alt]) {
+  outline: 2px dashed pink;
+  filter: blur(10px);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Global */
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+}
+
+a {
+  transition: all ease-in-out 0.2s;
+}
+
+/* Utilities */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}

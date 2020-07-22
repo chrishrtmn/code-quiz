@@ -1,13 +1,13 @@
 # Code Quiz
 
-Code Quiz is used to assess a developer and their current abilities. It's been designed to be straightforward enough to allow for different solutions. The developer will be assessed on decisions made and methods chosen.
+Made with:
+
+- [Next.js](https://github.com/vercel/next.js)
+- [Framer Motion](https://github.com/framer/motion)
 
 ## Instructions
 
-1. Fork this repo
-2. Develop `mockup.png`
-4. Share your repo
-
-## Careers
-
-We're always hiring. See [Careers](https://www.skycatchfire.com/careers) @ SKYCATCHFIRE for more info.
+1. Run `git clone` on this repo locally
+2. `cd` into this newly cloned directory
+3. Run `npm install` to install necessary packages
+4. Run `npm run build` to see results
