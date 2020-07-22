@@ -418,6 +418,7 @@ export default function Grid() {
 
         .grid-item .join {
           align-items: center;
+          min-height: 1px;
           padding: 40px 20px;
           background: #eff1f2;
           text-transform: uppercase;
