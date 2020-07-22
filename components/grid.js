@@ -11,7 +11,7 @@ export default function Grid() {
           {(src) => <img src={src} alt='Image 1' />}
         </ProgressiveImage>
 
-        <div className='overlay' onclick=''>
+        <div className='overlay' onClick=''>
           <div className='content'>
             <h2>Chris Hartman</h2>
             <ul>
@@ -31,7 +31,7 @@ export default function Grid() {
           {(src) => <img src={src} alt='Image 2' />}
         </ProgressiveImage>
 
-        <div className='overlay' onclick=''>
+        <div className='overlay' onClick=''>
           <div className='content'>
             <h2>Site Built With</h2>
             <ul>
@@ -64,7 +64,7 @@ export default function Grid() {
           {(src) => <img src={src} alt='Image 3' />}
         </ProgressiveImage>
 
-        <div className='overlay' onclick=''>
+        <div className='overlay' onClick=''>
           <div className='content'>
             <h2>Experience</h2>
             <ul>
@@ -89,7 +89,7 @@ export default function Grid() {
           {(src) => <img src={src} alt='Image 4' />}
         </ProgressiveImage>
 
-        <div className='overlay' onclick=''>
+        <div className='overlay' onClick=''>
           <div className='content'>
             <h2>Interests</h2>
             <ul>
@@ -126,7 +126,7 @@ export default function Grid() {
           {(src) => <img src={src} alt='Image 5' />}
         </ProgressiveImage>
 
-        <div className='overlay qa' onclick=''>
+        <div className='overlay qa' onClick=''>
           <div className='content'>
             <h3>Tuna</h3>
             <h4>Young Buck</h4>
@@ -161,7 +161,7 @@ export default function Grid() {
           {(src) => <img src={src} alt='Image 6' />}
         </ProgressiveImage>
 
-        <div className='overlay' onclick=''>
+        <div className='overlay' onClick=''>
           <div className='content'>
             <p>Text overlay</p>
           </div>
@@ -176,7 +176,7 @@ export default function Grid() {
           {(src) => <img src={src} alt='Image 7' />}
         </ProgressiveImage>
 
-        <div className='overlay' onclick=''>
+        <div className='overlay' onClick=''>
           <div className='content'>
             <p>Text overlay</p>
           </div>
@@ -191,7 +191,7 @@ export default function Grid() {
           {(src) => <img src={src} alt='Image 8' />}
         </ProgressiveImage>
 
-        <div className='overlay' onclick=''>
+        <div className='overlay' onClick=''>
           <div className='content'>
             <h2>Congrats!</h2>
             <p>
@@ -308,6 +308,13 @@ export default function Grid() {
         .grid-item:active .overlay {
           opacity: 1;
           background: rgba(100, 120, 133, 0.92);
+        }
+
+        @media hover {
+          .grid-item .overlay {
+            opacity: 1;
+            background: rgba(100, 120, 133, 0.92);
+          }
         }
 
         .grid-item .content h2 {

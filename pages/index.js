@@ -5,8 +5,9 @@ export default function Home() {
   return (
     <div className='container'>
       <Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>SKYCATCHFIRE - Chris Hartman</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/images/favicon/favicon.ico' />
       </Head>
 
       <main>
