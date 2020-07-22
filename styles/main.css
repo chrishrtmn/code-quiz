@@ -1,6 +1,8 @@
 :root {
   --color-base: #3b403f;
   --color-base-light: #cdcece;
+  --color-brand-primary: #647885;
+  --color-brand-secondary: #ba634f;
   --width-max: 1150px;
 
   --font-family-base: Arial, Helvetica, sans-serif;

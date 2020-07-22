@@ -1,51 +1,118 @@
+import ProgressiveImage from 'react-progressive-image'
+
 export default function Grid() {
   return (
     <div className='grid'>
       <div className='grid-item'>
-        <img src='/images/gallery/image-01.jpg' alt='Image 01' />
+        <ProgressiveImage
+          src='images/gallery/image-01.webp'
+          placeholder='images/gallery/image-01.jpg'
+        >
+          {(src) => <img src={src} alt='Image 1' />}
+        </ProgressiveImage>
+
         <div className='overlay'>
-          <div className='content'>Chris Hartman's Code-Quiz</div>
+          <div className='content'>
+            <h2>Chris Hartman</h2>
+            <ul>
+              <li>Front-End Developer</li>
+              <li>UI/UX Enthusiast</li>
+              <li>Accessibility Advocate</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-02.jpg' alt='Image 02' />
+        <ProgressiveImage
+          src='images/gallery/image-02.webp'
+          placeholder='images/gallery/image-02.jpg'
+        >
+          {(src) => <img src={src} alt='Image 2' />}
+        </ProgressiveImage>
+
         <div className='overlay'>
-          <div className='content'>Built with Next.js (React Framework)</div>
+          <div className='content'>
+            <h2>Site Built With</h2>
+            <ul>
+              <li>Next.js (React Framework)</li>
+              <li>styled-jsx &middot; PostCSS &middot; CSS Grid</li>
+              <li>Progressive Images (WebP Format with JPG Fallback)</li>
+              <li>Mobile-First Responsive Design</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className='grid-item'>
         <div className='quote'>
           <div className='content'>
-            <i>"</i>I drink to make other people more interesting.{' '}
-            <span>Ernest Hemingway</span>
+            <i>&ldquo;</i>
+            <blockquote>
+              I drink to make other people more interesting.
+              <cite>Ernest Hemingway</cite>
+            </blockquote>
           </div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-03.jpg' alt='Image 03' />
+        <ProgressiveImage
+          src='images/gallery/image-03.webp'
+          placeholder='images/gallery/image-03.jpg'
+        >
+          {(src) => <img src={src} alt='Image 3' />}
+        </ProgressiveImage>
+
         <div className='overlay'>
-          <div className='content'>Interest/Hobby</div>
+          <div className='content'>
+            <h2>Experience</h2>
+            <ul>
+              <li>HTML &middot; CSS &middot; JavaScript &middot; PHP</li>
+              <li>jQuery &middot; React.js &middot; Vue.js &middot; Next.js</li>
+              <li>Drupal &middot; Laravel &middot; ASP.NET</li>
+              <li>
+                Git &middot; npm &middot; Webpack &middot; Sass &middot;
+                CSS-in-JS
+              </li>
+              <li>UI/UX Design &middot; Adobe Creative Suite &middot; Figma</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-04.jpg' alt='Image 04' />
+        <ProgressiveImage
+          src='images/gallery/image-04.webp'
+          placeholder='images/gallery/image-04.jpg'
+        >
+          {(src) => <img src={src} alt='Image 4' />}
+        </ProgressiveImage>
+
         <div className='overlay'>
-          <div className='content'>4 Cats. Make it stop.</div>
+          <div className='content'>
+            <h2>Other</h2>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-05.jpg' alt='Image 05' />
-        <div className='overlay'>
+        <ProgressiveImage
+          src='images/gallery/image-05.webp'
+          placeholder='images/gallery/image-05.jpg'
+        >
+          {(src) => <img src={src} alt='Image 5' />}
+        </ProgressiveImage>
+
+        <div className='overlay qa'>
           <div className='content'>
             <h3>Tuna</h3>
             <h4>Young Buck</h4>
             <p>
-              <strong>Q</strong>For what would you be famous?
+              <strong>Q</strong> For what would you be famous?
             </p>
             <p>
               <strong>A</strong> My legendary puppy dog face and 1st rate
@@ -58,27 +125,49 @@ export default function Grid() {
       <div className='grid-item'>
         <div className='quote'>
           <div className='content'>
-            <i>"</i>Good people drink good beer. <span>Hunter S. Thompson</span>
+            <i>&ldquo;</i>
+            <blockquote>
+              Good people drink good beer.
+              <cite>Hunter S. Thompson</cite>
+            </blockquote>
           </div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-06.jpg' alt='Image 06' />
+        <ProgressiveImage
+          src='images/gallery/image-06.webp'
+          placeholder='images/gallery/image-06.jpg'
+        >
+          {(src) => <img src={src} alt='Image 6' />}
+        </ProgressiveImage>
+
         <div className='overlay'>
           <div className='content'>Example text overlay</div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-07.jpg' alt='Image 07' />
+        <ProgressiveImage
+          src='images/gallery/image-07.webp'
+          placeholder='images/gallery/image-07.jpg'
+        >
+          {(src) => <img src={src} alt='Image 7' />}
+        </ProgressiveImage>
+
         <div className='overlay'>
           <div className='content'>Example text overlay</div>
         </div>
       </div>
 
       <div className='grid-item'>
-        <img src='/images/gallery/image-08.jpg' alt='Image 08' />
+        <ProgressiveImage
+          src='images/gallery/image-08.webp'
+          placeholder='images/gallery/image-08.jpg'
+        >
+          {(src) => <img src={src} alt='Image 8' />}
+        </ProgressiveImage>
+
         <div className='overlay'>
           <div className='content'>Example text overlay</div>
         </div>
@@ -89,7 +178,7 @@ export default function Grid() {
           <div className='content'>
             <h2>Join our team</h2>
             <p>Think you've got what it takes?</p>
-            <img />
+            <img src='images/badge.svg' alt="Martha's Vineyard" />
           </div>
         </div>
       </div>
@@ -97,7 +186,7 @@ export default function Grid() {
       <style jsx>{`
         .grid {
           display: grid;
-          grid-gap: 60px 20px;
+          grid-gap: 20px;
           justify-content: center;
           justify-items: center;
         }
@@ -105,44 +194,81 @@ export default function Grid() {
         @media (min-width: 640px) {
           .grid {
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 60px 45px;
+            grid-gap: 40px 30px;
           }
         }
 
         @media (min-width: 960px) {
           .grid {
             grid-template-columns: repeat(3, 1fr);
+            grid-gap: 60px 45px;
           }
         }
 
         .grid-item {
           position: relative;
           width: 100%;
-          height: 100%;
           text-align: center;
+        }
+
+        @media (min-width: 640px) {
+          .grid-item {
+            height: 100%;
+            width: auto;
+          }
+
+          .grid-item:last-child:nth-child(3n - 1) {
+            grid-column: span 2;
+            width: 100%;
+          }
+        }
+
+        @media (min-width: 960px) {
+          .grid-item {
+            width: 100%;
+          }
+
+          .grid-item:last-child:nth-child(3n - 1) {
+            grid-column: span 1;
+          }
         }
 
         .grid-item img {
           width: 100%;
+          max-height: 300px;
+          object-fit: cover;
+          object-position: 0 20%;
         }
 
-        .grid-item > div {
+        @media (min-width: 640px) {
+          .grid-item img {
+            max-height: none;
+            object-fit: none;
+            object-position: 50% 50%;
+          }
+        }
+
+        .grid-item .overlay {
           position: absolute;
           bottom: 0;
           left: 0;
           display: grid;
           justify-content: center;
           align-items: center;
-          height: 100%;
           width: 100%;
+          height: 300px;
+          overflow: hidden;
           padding: 20px;
           text-align: center;
-        }
-
-        .grid-item .overlay {
           opacity: 0;
           color: #fff;
           transition: all ease-in-out 0.2s;
+        }
+
+        @media (min-width: 640px) {
+          .grid-item .overlay {
+            height: 100%;
+          }
         }
 
         .grid-item:hover .overlay {
@@ -150,22 +276,70 @@ export default function Grid() {
           background: rgba(100, 120, 133, 0.92);
         }
 
-        .grid-item .quote {
-          justify-content: start;
-          align-items: end;
-          padding: 0 0 85px;
-          text-align: left;
+        .grid-item .content h2 {
+          margin: 0 0 20px;
         }
 
-        .grid-item:nth-child(3) .quote {
-          justify-content: end;
+        .grid-item .content li {
+          padding: 3px 0;
+        }
+
+        .grid-item .quote,
+        .grid-item .join {
+          display: grid;
+          height: 100%;
+          min-height: 200px;
+        }
+
+        .grid-item .quote {
+          text-align: left;
+          justify-content: center;
+          align-items: center;
+        }
+
+        @media (min-width: 640px) {
+          .grid-item .quote {
+            justify-content: start;
+            align-items: end;
+            padding: 0 0 85px;
+          }
+        }
+
+        @media (min-width: 640px) {
+          .grid-item:nth-child(3) .quote {
+            justify-content: end;
+          }
         }
 
         .grid-item .quote .content {
-          max-width: 220px;
+          max-width: 240px;
+        }
+
+        .grid-item .quote i {
+          display: block;
+          font-size: 90px;
+          line-height: 0.3;
+          font-family: var(--font-family-base);
+          color: var(--color-brand-secondary);
+        }
+
+        .grid-item .quote blockquote {
+          color: var(--color-brand-primary);
+          text-transform: uppercase;
+          line-height: 1.6;
+        }
+
+        .grid-item .quote blockquote cite {
+          display: block;
+          margin: 15px 0 0;
+          font-size: 14px;
+          font-style: normal;
+          color: var(--color-brand-secondary);
         }
 
         .grid-item .join {
+          align-items: center;
+          padding: 40px 20px;
           background: #eff1f2;
           text-transform: uppercase;
           letter-spacing: 4px;
@@ -186,6 +360,20 @@ export default function Grid() {
 
         .grid-item .join p {
           line-height: 1.6;
+        }
+
+        .grid-item .join img {
+          display: none;
+        }
+
+        @media (min-width: 960px) {
+          .grid-item .join img {
+            display: block;
+            max-width: 150px;
+            position: absolute;
+            right: -30px;
+            bottom: -70px;
+          }
         }
       `}</style>
     </div>

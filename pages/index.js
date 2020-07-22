@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className='container'>
       <Head>
-        <title>SKYCATCHFIRE / chrishrtmn</title>
+        <title>SKYCATCHFIRE - Chris Hartman</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
@@ -34,31 +34,52 @@ export default function Home() {
         }
 
         h1 {
-          margin: 27px auto 63px;
+          margin: 17px auto 43px;
           text-align: center;
-          border-bottom: 1px solid var(--color-base-light);
           font-size: 18px;
           text-transform: uppercase;
           letter-spacing: 5px;
           color: var(--color-base);
+          border-bottom: 1px solid var(--color-base-light);
+        }
+
+        @media (min-width: 640px) {
+          h1 {
+            margin: 27px auto 63px;
+            padding: 0;
+          }
         }
 
         h1 span {
           display: inline-block;
           position: relative;
           top: 13px;
+          padding: 0 30px;
           background: #fff;
         }
 
+        @media (min-width: 640px) {
+          h1 span {
+            padding: 0;
+          }
+        }
+
         i {
-          display: inline-block;
+          display: none;
           width: 0;
           height: 0;
-          margin: 0 30px 0 24px;
+          margin: 0 20px 0 14px;
           border: 6px solid transparent;
           border-bottom-color: var(--color-base);
           position: relative;
           top: -6px;
+        }
+
+        @media (min-width: 640px) {
+          i {
+            display: inline-block;
+            margin: 0 30px 0 24px;
+          }
         }
 
         i:after {
@@ -76,6 +97,12 @@ export default function Home() {
           margin: 50px 0 40px;
           text-align: center;
           border-top: 1px solid var(--color-base-light);
+        }
+
+        @media (min-width: 960px) {
+          footer {
+            margin: 100px 0 40px;
+          }
         }
 
         footer span {
