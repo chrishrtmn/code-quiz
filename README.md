@@ -3,7 +3,7 @@
 Chris Hartman's Code-Quiz Results. 
 
 ## Live site
-Visit [https://code-quiz.vercel.app](https://code-quiz.vercel.app) to see results.
+Visit [https://example-nextjs-grid.vercel.app](https://example-nextjs-grid.vercel.app) to see results.
 
 ## Local development
 
